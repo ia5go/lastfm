@@ -1,10 +1,11 @@
 
 import styles from "./page.module.scss";
+import { Form } from "@/components/Form";
 
 export default function Home() {
   return (
     <main className={styles.bgColor} >
-      <h1>Hello World</h1>
+      <Form/>
     </main>
   );
 }

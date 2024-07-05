@@ -1,0 +1,28 @@
+@use "../scss/mixins" as *;
+@use "../scss/variables" as *;
+
+.form {
+  width: 90%;
+  max-width: 1080px;
+  border-radius: 100vw;
+  background-color: $white-900;
+
+  @include disFlex(row, space-between, center);
+
+  padding: 0.5rem;
+  margin-inline: auto;
+
+  &__input {
+    border: none;
+    font: 400 1rem $font-primary;
+    text-align: center;
+    color: $black-500;
+    flex: 1 0 auto;
+
+    &:is(::-ms-input-placeholder, ::placeholder) {
+      font: 400 1rem $font-primary;
+      text-align: center;
+      color: $black-400;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "../scss/mixins" as *;
+@use "../scss/variables" as *;
+
+.btn {
+  width: fit-content;
+  border-radius: 100vw;
+  padding: 0.5rem 2.5rem;
+  background-color: $purple-500;
+  color: $black-500;
+  font: 400 1rem $font-primary;
+  text-align: center;
+}
