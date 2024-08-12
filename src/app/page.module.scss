@@ -1,11 +1,8 @@
 @use "../scss/mixins" as *;
 @use "../scss/variables" as *;
 
-
-.bgColor{
+.bgColor {
   background-color: $purple-600;
   height: 100dvh;
-  display: grid;
-  align-content: center;
-  text-align: center;
+  position: relative;
 }

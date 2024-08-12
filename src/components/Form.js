@@ -9,12 +9,15 @@ export function Form() {
   const [search, setSearch] = useState("");
 
   return (
-    <div className={styles.form}>
+    <div id="form" className={styles.form}>
       <Button
-        title="Album"
         // link={`http://ws.audioscrobbler.com/2.0/?method=album.search&$album=${search}&limit=5&api_key=${key}&format=json`}
         link={`/album/${search}`}
-      />
+      >
+        Album
+      </Button>
+
+      {/* TODO: ADD SETTIMEOUT NO CHANGE; */}
 
       <input
         value={search}
@@ -25,9 +28,10 @@ export function Form() {
       />
 
       <Button
-        title="Artist"
         link={`http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${search}&limit=5&api_key=${key}&format=json`}
-      />
+      >
+        Artist
+      </Button>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 @use "../scss/variables" as *;
 
 .form {
-  width: 90%;
+  width: 90dvw;
   max-width: 1080px;
   border-radius: 100vw;
   background-color: $white-900;
@@ -10,7 +10,14 @@
   @include disFlex(row, space-between, center);
 
   padding: 0.5rem;
-  margin-inline: auto;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  translate: -50% -50%;
+
+  transition: top ease-in-out 0.5s;
 
   &__input {
     border: none;
